@@ -1,0 +1,35 @@
+
+
+.full-screen {
+    background-color: black;
+    width: 100%;
+    height: auto;
+    bottom: 0px;
+    top: 0px;
+    left: 0;
+    position: absolute;
+}
+
+.title {
+    position: absolute;
+    text-align: center;
+    width: 150px;
+    height: 50px;
+    top: 50%;
+    left: 50%;
+    margin-top: -25px;
+    margin-left: -75px;
+    color: white;
+}
+
+
+.full-screen:hover {
+    background-color: white;
+}
+
+.full-screen:hover .title {
+    color: black;
+}
+
+
+
