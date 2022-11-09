@@ -1,0 +1,349 @@
+
+  
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit; 
+}
+
+/* WRAPPER */
+.wrapper {
+    
+height: 100vh;
+width: 100vw;
+background-color: var(--bg-color);
+}
+/* WRAPPER end */
+
+/* BODY */
+body {
+    margin : 0;
+}
+/* BODY end */
+
+html,
+    body {
+        height: 100%;
+        overflow: hidden;
+    }
+
+    body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: serif;
+    }
+
+a:visited {
+    text-decoration: none;
+    color: black;
+}
+
+a:link {
+    text-decoration: none;
+    color: black;
+}
+
+.full-screen {
+    background-color: white;
+    width: 100%;
+    height: auto;
+    bottom: 0px;
+    top: 0px;
+    left: 0;
+    position: absolute;
+}
+
+.title {
+    position: absolute;
+    text-align: center;
+    width: 150px;
+    height: 50px;
+    top: 50%;
+    left: 50%;
+    margin-top: -25px;
+    margin-left: -75px;
+    color: black;
+    cursor: default ;
+}
+
+.smiley {
+    visibility: hidden;
+}
+
+.title-text:hover .smiley {
+    visibility: visible;
+}
+
+/* NAME-TITLE 
+#name-title {
+    border: .5px solid black;
+    position: absolute;
+    right: 4%;
+    top: 4%;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    z-index: 3;
+    background-color: white;
+    width: 150px;
+    text-align: center;
+    
+}
+#name-title a {
+    color: white;
+    text-decoration: none;
+    display: block; /* to make entire box the link */ /*
+}
+#name-title:hover a {
+    color: black;
+}
+/* NAME-TITLE end */ 
+
+/* ABOUT HOVER test */
+table, th, td {
+    border:1px solid black;
+    border-collapse: collapse;
+    font-family: serif;
+    
+}
+.about-table {
+    background-color: white;
+    position: absolute;
+    right: 4%;
+    top: 4%;
+    z-index: 5;
+    width: 150px;
+    border: 1px solid black;
+    cursor: normal; 
+    
+}
+.table-header th {
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+
+
+.about-table th {
+    color: white;
+}
+.about-description {
+display: none;
+
+}
+.about-table:hover .about-description {
+display: block;
+border: none;
+font-size: 0.9rem;
+pointer-events: none;
+
+}
+.about-table:hover th {
+    color: black;
+    text-decoration: none;
+    font-weight: normal;
+    pointer-events: none;
+}
+    /* adding picture to about */
+    .about-picture {
+        display: none;
+        border: none;
+        padding: 0px;
+    }
+    .about-table:hover .about-picture {
+    display: block;
+    border: none;
+    padding: 0px;
+    height: 185px;
+    overflow: hidden;
+    
+    }
+    .about-picture img {
+        width: 148px;
+        padding: 0px;
+        filter: blur(4px);
+        transform: scale(1.15);
+        transition: filter 3s;
+        
+    }
+
+    .about-picture img:hover {
+        filter: blur(0px);
+
+    }
+    .about-picture img:active {
+        pointer-events: none;
+    }
+    /* end */
+
+/* ABOUT HOVER test end */
+
+.link-table {
+    position: absolute;
+    right: 4%;
+    bottom: 4%;
+    background-color: white;
+    text-align: initial;
+    justify-self: center; 
+    width: 150px;
+    text-align: center;
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+
+.link-table td:hover {
+    text-decoration: none;
+    background: yellow;
+    cursor: pointer;
+}
+
+.link-table a {
+    display: block;
+}
+
+.extra-bits {
+    position: absolute;
+    right: 33%;
+    top: 65%;
+    background-color: white;
+    text-align: initial;
+    justify-self: center; 
+    width: 150px;
+    text-align: left;
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+
+.extra-bits td.extra-link:hover {
+    text-decoration: none;
+    background: yellow;
+    cursor: pointer;
+}
+
+.extra-link a {
+    display: block;
+    
+}
+
+.alignleft {
+    float: left;
+  }
+  .alignright {
+    float: right;
+    font-size: 0.8rem;
+  }
+
+
+/* PROJECT NAV */
+.project-nav {
+    position: absolute;
+    left: 10%;
+    top: 20%;
+    background-color: white;
+    text-align: initial;
+    justify-self: center;
+    cursor: normal;
+}
+ul {
+    list-style-type: none;
+  }
+  
+  .project-nav a {
+    text-decoration: none;
+    display: block;
+    /*cursor: crosshair;*/
+  }
+  
+table a:visited {
+    text-decoration: none;
+    color: black;
+    display: block;
+  }
+  
+  
+  .project-nav table, th, td {
+    border:1px solid black;
+    border-collapse: collapse;
+  }
+  
+  .project-nav th, td {
+    padding: 4px;
+    text-decoration: none;
+  }
+  
+
+  
+ table td.project:hover {
+      text-decoration: none;
+      background: yellow;
+      cursor: pointer;
+  }
+
+  table td.coming-soon {
+    text-decoration: none;
+    cursor: default;
+    pointer-events: none;
+  }
+  /* PROJECT NAV end */
+
+
+
+/* MEDIA QUERIES */
+
+.small-screen {
+    display: none;
+    position: absolute;
+     top: 50%;
+        transform: translate(0, -50%);
+        /* ^ to keep the box centered vertically + top:50% */
+}
+
+.small-screen img {
+    object-fit: cover;
+    width: 60vw;
+    pointer-events: none;
+
+}
+
+
+/* hide body on smaller screens */
+
+
+.center-text {
+    position: absolute;
+    text-align: center;
+    width: 150px;
+    height: 150px;
+    top: 50%;
+    left: 50%;
+    margin-top: -50px;
+    margin-left: -75px;
+    color: black;
+    cursor: default ;
+}
+
+@media screen and (max-width: 900px) {
+    .wrapper {
+      display: none;
+    }
+
+    #name-title {
+        display: none;
+    }
+
+    .full-screen {
+        display: none;
+    }
+    
+    
+    .about-table {
+        display: none;
+    }
+
+
+    .small-screen {
+        display: block;
+        
+        
+    }
+  }
