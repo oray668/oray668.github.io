@@ -166,7 +166,7 @@
 
 .back-door-2-container img:hover {
     transform: translate(30%, 30%) scale(2.5);
-    cursor: default;
+    cursor: pointer;
 }
 
 /* CARPORT 1 */
