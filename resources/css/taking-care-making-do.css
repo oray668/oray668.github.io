@@ -254,7 +254,7 @@
 
 .deck-1-container img:hover {
     transform: translate(15%, -2%) scale(2);
-    cursor: default;
+    cursor: pointer;
 }
 
 
