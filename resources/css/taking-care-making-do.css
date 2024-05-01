@@ -311,7 +311,7 @@
 
 .fence-1-container img:hover {
     transform: translate(-30%, -20%) scale(2);
-    cursor: default;
+    cursor: pointer;
 }
 
 
