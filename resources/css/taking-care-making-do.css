@@ -367,7 +367,7 @@
 
 .spa-1-container img:hover {
     transform: translate(0%, -25%) scale(2);
-    cursor: default;
+    cursor: pointer;
 }
 
 
