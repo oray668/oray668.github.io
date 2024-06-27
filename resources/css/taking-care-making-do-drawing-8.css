@@ -1,0 +1,414 @@
+
+
+* {
+    box-sizing: border-box;
+}
+
+/* BODY */
+    body {
+        margin : 0;
+    }
+/* BODY end */
+
+/* NAME-TITLE */
+    #name-title {
+        border: 1px solid black;
+        position: fixed;
+        right: 4%;
+        top: 4%;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        z-index: 5;
+        background-color: white;
+        width: 150px;
+        text-align: center;
+        
+    }
+    #name-title a {
+        color: black;
+        text-decoration: none;
+        display: block; /* to make entire box the link */
+    }
+    #name-title:hover a {
+        color: white;
+    }
+/* NAME-TITLE end */
+
+
+
+/* WRAPPER */
+    .wrapper {
+        display: grid;
+        grid-template-columns: repeat(20, 1fr);
+        grid-auto-rows: auto;
+        /*grid-template-rows: repeat(15, 1fr);*/
+        justify-items: stretch;
+        /* grid-gap: 2px; need to fix the margins(?) on the side if doing gap */
+    height: 100vh;
+    width: 100vw;
+    
+    }
+/* WRAPPER end */
+
+
+
+
+/* PROJECT DESCRIPTION */
+    ul {
+        list-style-type: none;
+    }
+    
+   
+    
+    table a:visited {
+        text-decoration: none;
+        color: black;
+    }
+
+    #project-table {
+        cursor: default;
+        
+    }
+    
+    table, th, td {
+        border:1px solid black;
+        border-collapse: collapse;
+        font-family: serif;
+    }
+    
+    #project-table th, td {
+        padding: 4px;
+        text-decoration: none;
+    }
+    
+    table {
+        width: 90vh;
+        position: fixed;
+        margin: auto;
+        top:0;
+        bottom: 0;
+        background-color: white;
+        text-align: initial;
+    justify-self: center;
+        table-layout: fixed;
+        z-index: 5;
+    }
+    
+    table td.project:hover {
+        text-decoration: none;
+        background: #f0ff00;
+        cursor: e-resize;
+    }
+    
+    td#project-year {
+        width: 40px;
+        text-align: center;
+    
+    }
+    
+   
+    
+    #project-text {
+        max-height: 65px;
+        overflow: scroll;
+        overflow-x: hidden; /* to hide horizontal scrollbar on windows */
+    }
+    
+    #project-tableheader {
+        cursor: move;
+    }
+    
+    #project-tableheader:hover {
+        background: #e8d1ff; 
+    }
+
+
+    .alignleft {
+        float: left;
+    }
+    .alignright {
+        float: right;
+    }
+  /* PROJECT DESCRIPTION end */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  /* MEDIA QUERIES */
+
+.small-screen {
+    display: none;
+    position: absolute;
+     top: 50%;
+        transform: translate(0, -50%);
+        /* ^ to keep the box centered vertically + top:50% */
+}
+
+.small-screen img {
+    object-fit: cover;
+    width: 60vw;
+    pointer-events: none;
+
+}
+
+
+
+
+
+  /* SKETCHES */
+
+  .sketch-1 {
+    position: fixed;
+    left: 4%;
+    top: 38%;
+    z-index: -1;
+    display: inline;
+    width: 20%;
+    height: 20%;
+    background-image: url("../../resources/images/artweek2022-10.gif");
+    background-position: 50% 50%;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  .sketch-2 {
+    position: fixed;
+    right: 1%;
+    bottom: 12%;
+    z-index: -5;
+    display: inline;
+    width: 14%;
+    height: 14%;
+    background-image: url("../../resources/images/artweek2022-35.gif");
+    background-position: 50% 50%;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  .sketch-3 {
+    position: fixed;
+    right: 4%;
+    top: 12%;
+    z-index: -5;
+    display: inline;
+    width: 19%;
+    height: 20%;
+    background-image: url("../../resources/images/artweek2022-1.gif");
+    background-position: 50% 50%;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  .sketch-5 {
+    position: fixed;
+    right: 8%;
+    top: 45%;
+    z-index: -1;
+    display: inline;
+    width: 13%;
+    height: 15vw;
+    background-image: url("../../resources/images/garage-sketches-04.jpg");
+    background-position: 50% 50%;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  .sketch-6 {
+    position: fixed;
+    left: 10%;
+    bottom: 8%;
+    z-index: -5;
+    display: inline;
+    width: 13%;
+    height: 20%;
+    background-image: url("../../resources/images/garage-sketches-01.jpg");
+    background-position: 50% 50%;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  .sketch-8 {
+    position: fixed;
+    left: -3%;
+    top: 3%;
+    z-index: -5;
+    display: inline;
+    width: 22%;
+    height: 30%;
+    background-image: url("../../resources/images/garage-sketches-03.jpg");
+    background-position: 50% 50%;
+    background-size: contain;
+    background-repeat: no-repeat;
+   
+  }
+  .sketch-9 {
+    position: fixed;
+    right: 15%;
+    bottom: 2%;
+    z-index: -5;
+    display: inline;
+    width: 12%;
+    height: 17%;
+    background-image: url("../../resources/images/garage-sketches-02.jpg");
+    background-position: 50% 50%;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+ 
+
+
+
+
+
+
+  
+
+
+
+
+
+
+  
+
+  
+
+
+
+
+  /* SKETCHES end */
+
+
+  .nav-link a {
+    text-decoration: none;
+    display: block;
+    color: black;
+  }
+  
+  .nav-link a:visited {
+    text-decoration: none;
+    color: black;
+    display: block;
+  }
+
+  .nav-link:hover {
+    text-decoration: none;
+     background: #e8d1ff; 
+    cursor: pointer;
+
+  }
+
+/* LINKS */
+
+
+#next-link {
+    border: 1px solid black;
+    position: fixed;
+    right: 4%;
+    bottom: 4%;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    z-index: 10;
+    background-color: white;
+    width: 70px;
+    text-align: center;
+    display: block;
+}
+#next-link a {
+    color: black;
+    text-decoration: none;
+    display: block; /* to make entire box the link */
+}
+#next-link:hover  {
+    background-color: #e8d1ff; 
+}
+
+
+#back-link {
+    border: 1px solid black;
+    position: fixed;
+    left: 4%;
+    bottom: 4%;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    z-index: 10;
+    background-color: white;
+    width: 220px;
+    text-align: center;
+    display: block;
+}
+#back-link a {
+    color: black;
+    text-decoration: none;
+    display: block; /* to make entire box the link */
+}
+#back-link:hover  {
+    background-color: #e8d1ff; 
+}
+
+
+
+
+
+
+
+
+
+  /* hide body on smaller screens */
+
+
+.center-text {
+    position: absolute;
+    text-align: center;
+    width: 150px;
+    height: 150px;
+    top: 50%;
+    left: 50%;
+    margin-top: -50px;
+    margin-left: -75px;
+    color: black;
+    cursor: default ;
+}
+
+@media screen and (max-width: 900px) {
+    .wrapper {
+      display: none;
+    }
+
+    #name-title {
+        display: none;
+    }
+
+    .small-screen {
+        display: block;
+        
+        
+    }
+  }

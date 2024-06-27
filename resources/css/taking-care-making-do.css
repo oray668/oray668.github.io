@@ -341,7 +341,7 @@
 
 .vulcan-lane-1-container img:hover {
     transform: translate(-10%, -40%) scale(2);
-    cursor: default;
+    cursor: pointer;
 }
 
 
@@ -397,7 +397,7 @@
 
 .studio-2-container img:hover {
     transform: translate(3%, 10%) scale(2);
-    cursor: default;
+    cursor: pointer;
 }
 
 /* LOUNGE-DECK 1 */
@@ -424,7 +424,7 @@
 
 .lounge-deck-1-container img:hover {
     transform: translate(3%, 10%) scale(2);
-    cursor: default;
+    cursor: pointer;
 }
 
 
@@ -452,7 +452,7 @@
 
 .garage-1-container img:hover {
     transform: translate(20%, 10%) scale(2);
-    cursor: default;
+    cursor: pointer;
 }
 
 
