@@ -344,6 +344,33 @@ img {
 
 
 
+/*  BACK */
+
+
+#back-button {
+    border: 1px solid black;
+    position: absolute;
+    left: 4%;
+    bottom: 4%;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    z-index: 10;
+    background-color: white;
+    width: 185px;
+    text-align: center;
+    display: block;
+}
+#back-button a {
+    color: black;
+    text-decoration: none;
+    display: block; /* to make entire box the link */
+}
+
+#back-button:hover {
+    background-color: #e8d1ff; 
+    border: 1px solid #e8d1ff; 
+}
+
 
 
 
