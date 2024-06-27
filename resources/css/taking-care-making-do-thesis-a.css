@@ -116,17 +116,11 @@ img {
     
     }
     
-    /*td#project-text {
-        height: 200px;
-        display: block;
-        overflow: scroll;
-        text-overflow: ellipsis;
-        border: none;
-    } */
+
     
     #project-text {
         width: 230px; /* make a bit smaller than table width to allow for scrollbar */
-        height: 150px;
+        height: 165px;
         overflow: scroll;
         overflow-x: hidden; /* to hide horizontal scrollbar on windows */
     }
