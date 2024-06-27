@@ -333,14 +333,14 @@ img {
 
 #back-button {
     border: 1px solid black;
-    position: absolute;
+    position: fixed;
     left: 4%;
     bottom: 4%;
     padding-top: 3px;
     padding-bottom: 3px;
     z-index: 10;
     background-color: white;
-    width: 185px;
+    width: 70px;
     text-align: center;
     display: block;
 }
@@ -352,7 +352,7 @@ img {
 
 #back-button:hover {
     background-color: #e8d1ff; 
-    border: 1px solid #e8d1ff; 
+   
 }
 
 
