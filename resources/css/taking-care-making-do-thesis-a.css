@@ -210,22 +210,6 @@ img {
 
 
 
-  /* MEDIA QUERIES */
-
-.small-screen {
-    display: none;
-    position: absolute;
-     top: 50%;
-        transform: translate(0, -50%);
-        /* ^ to keep the box centered vertically + top:50% */
-}
-
-.small-screen img {
-    object-fit: cover;
-    width: 60vw;
-    pointer-events: none;
-
-}
 
 
 
