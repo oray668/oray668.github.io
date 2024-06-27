@@ -197,34 +197,34 @@
     z-index: -5;
     display: inline;
     width: 15%;
-    height: 15%;
-    background-image: url("../../resources/images/deck2-lawn-01.jpg");
+    height: 20%;
+    background-image: url("../../resources/images/2023-677.gif");
     background-position: 50% 50%;
     background-size: contain;
     background-repeat: no-repeat;
   }
   .sketch-2 {
     position: fixed;
-    right: 10%;
+    left: 7%;
     bottom: 12%;
     z-index: -5;
     display: inline;
-    width: 10%;
+    width: 15%;
     height: 18%;
-    background-image: url("../../resources/images/deck2-lawn-02.jpg");
+    background-image: url("../../resources/images/making_site_1_(1).jpg");
     background-position: 50% 50%;
     background-size: contain;
     background-repeat: no-repeat;
   }
   .sketch-3 {
     position: fixed;
-    left: 4%;
-    bottom: 20%;
+    left: 2%;
+    top: 2%;
     z-index: -1;
     display: inline;
-    width: 18%;
-  height: 18%;
-  background-image: url("../../resources/images/deck2-lawn-03.jpg");
+    width: 14%;
+  height: 15%;
+  background-image: url("../../resources/images/2023-598.gif");
     background-position: 50% 50%;
     background-size: contain;
     background-repeat: no-repeat;
@@ -235,13 +235,13 @@
 
   .sketch-5 {
     position: fixed;
-    left: 1%;
-    top: 1%;
+    right: 2%;
+    top: 55%;
     z-index: -1;
     display: inline;
-    width: 10%;
-    height: 10vw;
-    background-image: url("../../resources/images/deck2-lawn-04.jpg");
+    width: 14%;
+    height: 12vw;
+    background-image: url("../../resources/images/making_site_3.png");
     background-position: 50% 50%;
     background-size: contain;
     background-repeat: no-repeat;
@@ -251,13 +251,13 @@
 
   .gif-1 {
     position: fixed;
-    left: 3%;
-    top: 20%;
+    right: 3%;
+    top: 34%;
     z-index: -1;
     display: inline;
-    width: 16%;
-    height: 18%;
-    background-image: url("../../resources/images/2023-593-lawn.gif");
+    width: 14%;
+    height: 16%;
+    background-image: url("../../resources/images/late night art-05.jpg");
     background-position: 50% 50%;
     background-size: contain;
     background-repeat: no-repeat;
@@ -265,13 +265,13 @@
 
   .gif-2 {
     position: fixed;
-    right: 1%;
+    left: 2%;
     bottom: 38%;
     z-index: -1;
     display: inline;
     width: 16%;
-    height: 18%;
-    background-image: url("../../resources/images/2023-605-lawn.gif");
+    height: 30%;
+    background-image: url("../../resources/images/late night art-02.jpg");
     background-position: 50% 50%;
     background-size: contain;
     background-repeat: no-repeat;
@@ -279,7 +279,19 @@
 
 
 
-
+  .sketch-6 {
+    position: fixed;
+    right: 12%;
+    bottom: 3%;
+    z-index: -1;
+    display: inline;
+    width: 14%;
+    height: 12vw;
+    background-image: url("../../resources/images/late night art-04.jpg");
+    background-position: 50% 50%;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
   
   
 
