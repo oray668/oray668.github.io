@@ -1,0 +1,376 @@
+
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-padding-top: 100px;
+}
+
+img {
+    pointer-events: none;
+}
+
+/* BODY */
+    body {
+        margin : 0;
+        background-color: white;
+    }
+/* BODY end */
+
+/* NAME-TITLE */
+    #name-title {
+        border: 1px solid black;
+        position: fixed;
+        right: 4%;
+        top: 4%;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        z-index: 5;
+        background-color: white;
+        width: 150px;
+        text-align: center;
+        
+    }
+    #name-title a {
+        color: black;
+        text-decoration: none;
+        display: block; /* to make entire box the link */
+    }
+    #name-title:hover a {
+        color: white;
+    }
+/* NAME-TITLE end */
+
+
+
+/* WRAPPER */
+    .wrapper {
+
+    height: 100vh;
+    width: 100vw;
+   
+    }
+/* WRAPPER end */
+
+
+
+.thesis-wrapper {
+    height: 100vh;
+    width: 100vw;
+    padding-top: 100px;
+}
+
+
+/* PROJECT DESCRIPTION */
+    ul {
+        list-style-type: none;
+    }
+    
+   
+    
+    table a:visited {
+        text-decoration: none;
+        color: black;
+    }
+
+    #project-table {
+        cursor: default;
+    }
+    
+    table, th, td {
+        border:1px solid black;
+        border-collapse: collapse;
+        font-family: serif;
+    }
+    
+    #project-table th, td {
+        padding: 4px;
+        text-decoration: none;
+    }
+    
+    table {
+        width: 240px;
+        max-height: 300px;
+        position: fixed;
+        top: 4%;
+        left: 4%;
+        background-color: white;
+        text-align: initial;
+        justify-self: center;
+        table-layout: fixed;
+        z-index: 5;
+    }
+    
+    table td.project:hover {
+        text-decoration: none;
+        background: #f0ff00;
+        cursor: e-resize;
+    }
+    
+    td#project-year {
+        width: 40px;
+        text-align: center;
+        border-left: white;
+    
+    }
+    
+    /*td#project-text {
+        height: 200px;
+        display: block;
+        overflow: scroll;
+        text-overflow: ellipsis;
+        border: none;
+    } */
+    
+    #project-text {
+        width: 230px; /* make a bit smaller than table width to allow for scrollbar */
+        height: 150px;
+        overflow: scroll;
+        overflow-x: hidden; /* to hide horizontal scrollbar on windows */
+    }
+    
+    /*
+    #project-tableheader {
+        cursor: move;
+    }
+    
+    #project-tableheader:hover {
+        background: #e8d1ff; 
+    }
+*/
+
+    .alignleft {
+        float: left;
+    }
+    .alignright {
+        float: right;
+    }
+
+    .toc-pg-number{
+       
+        text-align: right;
+    }
+  /* PROJECT DESCRIPTION end */
+
+
+
+
+
+
+/* PLAN */
+.plan-container {
+    display:inline-block;
+    position: fixed;
+    left: 0;
+    right: 0;
+    
+    top: 30%;
+    margin: auto;
+    width: calc(60vh - 2px);
+    border: 1px solid black;
+    overflow: hidden;
+    background-color: white;
+    z-index: 1;
+    
+}
+
+.plan-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+   /* transition: all 1s ; */
+}
+
+.plan-container img:hover {
+    transform: translate(-5%, -2%) scale(2.5);
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  /* MEDIA QUERIES */
+
+.small-screen {
+    display: none;
+    position: absolute;
+     top: 50%;
+        transform: translate(0, -50%);
+        /* ^ to keep the box centered vertically + top:50% */
+}
+
+.small-screen img {
+    object-fit: cover;
+    width: 60vw;
+    pointer-events: none;
+
+}
+
+
+
+
+  .nav-link a {
+    text-decoration: none;
+    display: block;
+    color: black;
+  }
+  
+  .nav-link a:visited {
+    text-decoration: none;
+    color: black;
+    display: block;
+  }
+
+  .nav-link:hover {
+    text-decoration: none;
+     background: #e8d1ff; 
+    cursor: pointer;
+
+  }
+
+  .nav-link-toc {
+    font-size: 0.95em;
+  }
+
+
+  .nav-link-toc a {
+    text-decoration: none;
+    display: block;
+    color: black;
+  }
+  
+  .nav-link-toc a:visited {
+    text-decoration: none;
+    color: black;
+    display: block;
+  }
+
+  .nav-link-toc:hover {
+    text-decoration: none;
+     background: #e8d1ff; 
+    cursor: pointer;
+
+  }
+  /* hide body on smaller screens */
+
+
+.center-text {
+    position: absolute;
+    text-align: center;
+    width: 150px;
+    height: 150px;
+    top: 50%;
+    left: 50%;
+    margin-top: -50px;
+    margin-left: -75px;
+    color: black;
+    cursor: default ;
+}
+
+
+.spread {
+    display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 20px;
+  zoom: 1.2;
+  
+}
+
+
+.spread-back {
+    display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-bottom: 20px;
+  zoom: 1.2;
+  
+}
+
+.page-left {
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+}
+
+.page-right {
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    border-right: 1px solid black;
+}
+
+
+
+
+.page-right-cover {
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    border-right: 1px solid black;
+    border-left: 1px solid black;
+}
+
+
+.page-left-back {
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 900px) {
+    .wrapper {
+      display: none;
+    }
+
+    #name-title {
+        display: none;
+    }
+
+    .small-screen {
+        display: block;
+        
+        
+    }
+  }
