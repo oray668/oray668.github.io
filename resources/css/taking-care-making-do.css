@@ -225,7 +225,7 @@
 
 .plan-container img:hover {
     transform: translate(-5%, -2%) scale(2.5);
-    cursor: default;
+    cursor: pointer;
 }
 
 
