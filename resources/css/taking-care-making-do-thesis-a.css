@@ -383,8 +383,34 @@ img {
 
 
 
+/* MEDIA QUERIES */
+
+.small-screen {
+    display: none;
+    position: absolute;
+     top: 50%;
+        transform: translate(0, -50%);
+        /* ^ to keep the box centered vertically + top:50% */
+}
 
 
+
+
+/* hide body on smaller screens */
+
+
+.center-text {
+    position: absolute;
+    text-align: center;
+    width: 150px;
+    height: 150px;
+    top: 50%;
+    left: 50%;
+    margin-top: -50px;
+    margin-left: -75px;
+    color: black;
+    cursor: default ;
+}
 
 @media screen and (max-width: 900px) {
     .wrapper {
@@ -394,6 +420,16 @@ img {
     #name-title {
         display: none;
     }
+
+    .full-screen {
+        display: none;
+    }
+    
+    
+    .about-table {
+        display: none;
+    }
+
 
     .small-screen {
         display: block;
