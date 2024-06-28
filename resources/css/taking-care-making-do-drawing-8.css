@@ -320,7 +320,7 @@
 
   .nav-link:hover {
     text-decoration: none;
-     background: #e8d1ff; 
+     background: #fcf40a; 
     cursor: pointer;
 
   }
@@ -347,7 +347,7 @@
     display: block; /* to make entire box the link */
 }
 #next-link:hover  {
-    background-color: #e8d1ff; 
+    background-color: #fcf40a;
 }
 
 
@@ -370,7 +370,7 @@
     display: block; /* to make entire box the link */
 }
 #back-link:hover  {
-    background-color: #e8d1ff; 
+    background-color: #fcf40a;
 }
 
 
