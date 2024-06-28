@@ -105,7 +105,7 @@ img {
     
     table td.project:hover {
         text-decoration: none;
-        background: #f0ff00;
+        background: #fcf40a;
         cursor: e-resize;
     }
     
@@ -222,7 +222,7 @@ img {
 
   .nav-link:hover {
     text-decoration: none;
-     background: #e8d1ff; 
+     background: #fcf40a; 
     cursor: pointer;
 
   }
@@ -246,7 +246,7 @@ img {
 
   .nav-link-toc:hover {
     text-decoration: none;
-     background: #e8d1ff; 
+     background: #fcf40a; 
     cursor: pointer;
 
   }
@@ -345,7 +345,7 @@ img {
 }
 
 #back-button:hover {
-    background-color: #e8d1ff; 
+    background-color: #fcf40a; 
    
 }
 
