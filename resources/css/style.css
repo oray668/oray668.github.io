@@ -193,7 +193,7 @@ pointer-events: none;
 
 .link-table td:hover {
     text-decoration: none;
-    background: #e8d1ff;
+    background: #fcf40a;
     cursor: pointer;
 }
 
@@ -275,7 +275,7 @@ table a:visited {
   
     .project-entry:hover {
       text-decoration: none;
-       background: #e8d1ff; 
+       background: #fcf40a;
       cursor: pointer;
       /* filter: blur(5px);
       color: rgb(231, 231, 231); */
