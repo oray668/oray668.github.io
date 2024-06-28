@@ -125,7 +125,7 @@
     }
     
     #project-tableheader:hover {
-        background: #e8d1ff; 
+        background: #fcf40a;
     }
 
 
@@ -521,7 +521,7 @@
 
   .nav-link:hover {
     text-decoration: none;
-     background: #e8d1ff; 
+     background: #fcf40a;
     cursor: pointer;
 
   }
