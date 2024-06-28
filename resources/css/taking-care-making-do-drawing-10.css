@@ -192,39 +192,39 @@
 
   .sketch-1 {
     position: fixed;
-    left: 4%;
-    top: 30%;
+    right: 1%;
+    top: 40%;
     z-index: -1;
     display: inline;
     width: 20%;
-    height: 20%;
-    background-image: url("../../resources/images/fence-tree-01.jpg");
+    height: 26%;
+    background-image: url("../../resources/images/studio-sketch-b-01.jpg");
     background-position: 50% 50%;
     background-size: contain;
     background-repeat: no-repeat;
   }
   .sketch-2 {
     position: fixed;
-    right: 10%;
-    bottom: 12%;
+    left: 3%;
+    top: 3%;
     z-index: -5;
     display: inline;
-    width: 14%;
-    height: 25%;
-    background-image: url("../../resources/images/fence-tree-02.jpg");
+    width: 17%;
+    height: 17%;
+    background-image: url("../../resources/images/20120201_philip_-4.jpg");
     background-position: 50% 50%;
     background-size: contain;
     background-repeat: no-repeat;
   }
   .sketch-3 {
     position: fixed;
-    right: 4%;
-    top: 12%;
+    right: 2%;
+    bottom: 12%;
     z-index: -5;
     display: inline;
-    width: 19%;
-    height: 20%;
-    background-image: url("../../resources/images/fence-tree-06.jpg");
+    width: 15%;
+    height: 15%;
+    background-image: url("../../resources/images/20231101_oliver_-12.jpg");
     background-position: 50% 50%;
     background-size: contain;
     background-repeat: no-repeat;
@@ -237,33 +237,33 @@
     display: inline;
     width: 13%;
     height: 15vw;
-    background-image: url("../../resources/images/fence-tree-03.jpg");
+    background-image: url("../../resources/images/studio-sketch-f-01.jpg");
     background-position: 50% 50%;
     background-size: contain;
     background-repeat: no-repeat;
   }
   .sketch-6 {
     position: fixed;
-    right: 1%;
+    left: 10%;
     bottom: 40%;
     z-index: -5;
     display: inline;
     width: 13%;
-    height: 24%;
-    background-image: url("../../resources/images/fence-tree-05.jpg");
+    height: 22%;
+    background-image: url("../../resources/images/20231101_daniel_-9.jpg");
     background-position: 50% 50%;
     background-size: contain;
     background-repeat: no-repeat;
   }
   .sketch-8 {
     position: fixed;
-    left: -3%;
-    top: -3%;
+    right: 4%;
+    top: 10%;
     z-index: -5;
     display: inline;
     width: 22%;
     height: 19%;
-    background-image: url("../../resources/images/fence-tree-04.jpg");
+    background-image: url("../../resources/images/studio-sketch-01.jpg");
     background-position: 50% 50%;
     background-size: contain;
     background-repeat: no-repeat;
@@ -271,18 +271,32 @@
   }
   .sketch-9 {
     position: fixed;
-    left: 15%;
-    bottom: 25%;
-    z-index: -5;
+    left: 2%;
+    top: 25%;
+    z-index: -10;
     display: inline;
-    width: 16%;
+    width: 10%;
     height: 17%;
-    background-image: url("../../resources/images/fence-tree-07.jpg");
+    background-image: url("../../resources/images/studio-sketch-e-01.jpg");
     background-position: 50% 50%;
     background-size: contain;
     background-repeat: no-repeat;
   }
  
+
+  .sketch-10 {
+    position: fixed;
+    right: 17%;
+    bottom: 3%;
+    z-index: -10;
+    display: inline;
+    width: 12%;
+    height: 12%;
+    background-image: url("../../resources/images/studio-sketch-d-01.jpg");
+    background-position: 50% 50%;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
 
 
 
@@ -294,7 +308,7 @@
 
 
 
-
+  
 
   
 
