@@ -25,7 +25,7 @@ video {
     body {
         height: 100%;
         overflow: hidden;
-    }
+    } 
 
     body {
         display: flex;
@@ -90,6 +90,7 @@ video {
   width: 100px;
   text-align: center;
   color: black;
+  cursor: default;
 }
 
 .video-video {
@@ -132,7 +133,7 @@ border: white solid 1px;
 }
 
 .video-button:hover {
-  border: white solid ;
+  border: white solid 1px ;
   color: white;
   background-color: black;
   

@@ -217,7 +217,7 @@ img {
       scroll-snap-type: x mandatory;
       scroll-behavior: smooth;
       display: flex;
-      
+      pointer-events: none;
       scrollbar-width: none;
     }
     .slider-track-container::-webkit-scrollbar { display: none; }
