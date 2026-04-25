@@ -212,7 +212,7 @@ img {
     scroll-snap-type: x mandatory;
     scroll-behavior: smooth;
     display: flex;
-    
+    pointer-events: none;
     scrollbar-width: none;
 }
 
@@ -526,7 +526,7 @@ img {
   scroll-snap-type: x mandatory;
   scroll-behavior: smooth;
   display: flex;
-
+  pointer-events: all;
   border: 1px solid black;
   scrollbar-width: none;
 }
