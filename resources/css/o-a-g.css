@@ -1,0 +1,559 @@
+
+
+* {
+    box-sizing: border-box;
+    --index-blue: #3498db;
+}
+
+img {
+  pointer-events: none;
+  user-select: none; 
+}
+
+/* BODY */
+    body {
+        margin : 0;
+    }
+/* BODY end */
+
+   html,
+    body {
+        height: 100%;
+        overflow: hidden;
+    }
+
+    body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: serif;
+    }
+
+/* NAME-TITLE */
+    #name-title {
+        border: 1px solid black;
+        position: absolute;
+        right: 4%;
+        top: 4%;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        z-index: 5;
+        background-color: white;
+        width: 150px;
+        text-align: center;
+        
+    }
+    #name-title a {
+        color: black;
+        text-decoration: none;
+        display: block; /* to make entire box the link */
+    }
+    #name-title:hover a {
+        color: white;
+    }
+/* NAME-TITLE end */
+
+
+
+/* WRAPPER */
+    .wrapper {
+        display: grid;
+        grid-template-columns: repeat(20, 1fr);
+        grid-auto-rows: auto;
+        /*grid-template-rows: repeat(15, 1fr);*/
+        justify-items: stretch;
+        /* grid-gap: 2px; need to fix the margins(?) on the side if doing gap */
+    height: 100vh;
+    width: 100vw;
+    
+    }
+/* WRAPPER end */
+
+
+ 
+
+/* SLIDESHOW end */
+
+
+/* PROJECT DESCRIPTION */
+    ul {
+        list-style-type: none;
+    }
+    
+    table a {
+        text-decoration: none;
+        /*cursor: crosshair;*/
+        cursor: e-resize;
+    }
+    
+    table a:visited {
+        text-decoration: none;
+        color: black;
+    }
+    
+    table a:hover {
+        text-decoration: underline;
+    }
+    
+    table, th, td {
+        border:1px solid black;
+        border-collapse: collapse;
+        font-family: serif;
+    }
+    
+    #project-table th, td {
+        padding: 4px 4px 4px 4px;
+        text-decoration: none;
+       
+    }
+
+    
+    
+    table {
+        width: 300px;
+        max-height: 300px;
+        position: fixed;
+        top: 4%;
+        left: 4%;
+        background-color: white;
+        text-align: initial;
+        justify-self: center;
+        table-layout: fixed;
+        z-index: 5;
+    }
+    
+    table td.project:hover {
+        text-decoration: none;
+        background: var(--index-blue);
+        cursor: e-resize;
+    }
+    
+    td#project-year {
+        width: 40px;
+        text-align: center;
+    
+    }
+    
+    /*td#project-text {
+        height: 200px;
+        display: block;
+        overflow: scroll;
+        text-overflow: ellipsis;
+        border: none;
+    } */
+    
+    #project-text {
+        width: 290px; /* make a bit smaller than table width to allow for scrollbar */
+        height: 250px;
+        overflow: scroll;
+        overflow-x: hidden; /* to hide horizontal scrollbar on windows */
+    }
+    
+    #project-tableheader {
+        cursor: move;
+    }
+    
+    #project-tableheader:hover {
+        background: var(--index-blue);
+    }
+
+
+    .alignleft {
+        float: left;
+    }
+    .alignright {
+        float: right;
+    }
+  /* PROJECT DESCRIPTION end */
+
+
+
+
+/* NEW SLIDER */
+
+.slider-wrapper {
+      width: 60vw;
+      top: 11%;
+    right: 13%;
+    position: fixed;
+    }
+
+    .slider-track-container {
+      overflow-x: scroll;
+      scroll-snap-type: x mandatory;
+      scroll-behavior: smooth;
+      display: flex;
+      
+      border: 1px solid black;
+      scrollbar-width: none;
+    }
+    .slider-track-container::-webkit-scrollbar { display: none; }
+
+    .slide {
+      min-width: 100%;
+      scroll-snap-align: start;
+     /* aspect-ratio: 16 / 9; */
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      gap: 10px;
+      font-size: 15px;
+      font-weight: 500;
+      
+      user-select: none;
+      overflow: hidden;
+    }
+
+    .slide img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    /* Replace these with <img> tags — see comments below */
+    .slide-num {
+      font-size: 48px;
+      font-weight: 500;
+      opacity: 0.35;
+      line-height: 1;
+    }
+    .s1 { background: #185FA5; }
+    .s2 { background: #0F6E56; }
+    .s3 { background: #993C1D; }
+    .s4 { background: #533489; }
+    .s5 { background: #854F0B; }
+
+    .controls {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .nav-buttons {
+      display: flex;
+      gap: 8px;
+    }
+
+    .nav-btn {
+      
+     background-color: transparent;
+      color: black;
+      border: none;
+     
+      height: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      font-size: 16px;
+      
+    }
+    .nav-btn:hover { color: #848484; }
+    
+
+    .dots {
+      display: flex;
+      gap: 6px;
+      align-items: center;
+    }
+
+    .dot {
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      border: black solid 1px;
+      background: white;
+      transition: background 0.2s, transform 0.2s;
+      cursor: pointer;
+    }
+    .dot.active {
+      background: black;
+     
+    }
+
+    .slide-label {
+      font-size: 13px;
+      color: black;
+    }
+
+
+
+
+
+
+
+
+
+
+
+  /* MEDIA QUERIES */
+
+.small-screen {
+    display: none;
+    position: absolute;
+     top: 50%;
+        transform: translate(0, -50%);
+        /* ^ to keep the box centered vertically + top:50% */
+}
+
+.small-screen img {
+    object-fit: cover;
+    width: 60vw;
+    pointer-events: none;
+
+}
+
+
+
+
+
+  /* SKETCHES */
+
+  .bg-sketch {
+    position: absolute;
+  }
+
+  .bg-sketch img {
+    object-fit: cover;
+    width: 100%;
+  }
+
+
+/* MOBILE PAGE */
+
+
+.mobile-wrapper {
+  display: none;
+  height: 100vh;
+  width: 100vw;
+
+}
+
+
+/* [mobile] NAME-TITLE */
+#mobile-name-title {
+  border: 1px solid black;
+  position: absolute;
+  left: 6vw;
+  top: 6vw;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  z-index: 5;
+  background-color: white;
+  width: 150px;
+  text-align: center;
+
+}
+
+
+.mobile-bio {
+  position: absolute;
+  left: 6vw;
+  top: 100px;
+  width: 300px;
+  max-width: 88vw;
+}
+
+
+.mobile-message {
+  position: absolute;
+  left: 6vw;
+  top: calc(88vw + 250px);
+  width: 300px;
+  max-width: 88vw;
+}
+
+/* NAME-TITLE end */
+
+
+.mobile-link-table {
+  position: absolute;
+  right: 6vw;
+  bottom: 6vw;
+  top: auto;
+  left: auto;
+  background-color: white;
+  text-align: initial;
+  justify-self: center;
+  width: 150px;
+  text-align: center;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  border: black solid 1px;
+  border-collapse: collapse;
+  max-height: none;
+  transform: none;
+}
+
+
+
+.mobile-link-table tr {
+  border: black solid 1px;
+  border-collapse: collapse;
+}
+
+.mobile-link-table td {
+  padding: 4px;
+}
+
+.mobile-link-table td:hover {
+  text-decoration: none;
+  background: var(--index-blue);
+  cursor: pointer;
+}
+
+.mobile-link-table a {
+  display: block;
+  text-decoration: none;
+  color: black;
+}
+
+
+
+
+/* [mobile] SLIDER */
+
+.mobile-wrapper .slider-wrapper {
+  width: 88vw;
+  max-width: calc(100vh - 350px);
+  left: 6vw;
+  top: 200px;
+  position: relative;
+  display: block;
+  transform: none;
+}
+
+.mobile-wrapper .slider-track-container {
+  overflow-x: scroll;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  display: flex;
+
+  border: 1px solid black;
+  scrollbar-width: none;
+}
+
+.mobile-wrapper .slider-track-container::-webkit-scrollbar {
+  display: none;
+}
+
+.mobile-wrapper .slide {
+  min-width: 100%;
+  scroll-snap-align: start;
+  /* aspect-ratio: 16 / 9; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+  font-size: 15px;
+  font-weight: 500;
+  height: 88vw;
+  user-select: none;
+  overflow: hidden;
+}
+
+.mobile-wrapper .slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Replace these with <img> tags — see comments below */
+.mobile-wrapper .slide-num {
+  font-size: 48px;
+  font-weight: 500;
+  opacity: 0.35;
+  line-height: 1;
+}
+
+
+.mobile-wrapper .slider-wrapper .controls {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 4px;
+  background-color: white;
+  padding-left: 0%;
+}
+
+
+.mobile-wrapper .nav-buttons {
+  display: none;
+  gap: 8px;
+}
+
+.mobile-wrapper .nav-btn {
+
+  background-color: transparent;
+  color: white;
+  border: none;
+
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+
+
+}
+
+.mobile-wrapper .nav-btn:hover {
+  color: #848484;
+}
+
+
+.mobile-wrapper .dots {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.mobile-wrapper .dot {
+  width: 6px;
+  height: 6px;
+  color: #848484;
+  cursor: pointer;
+  border-radius: 0;
+  border: none;
+  
+}
+
+.mobile-wrapper .dot.active {
+  color: black;
+  background: none;
+  text-decoration: none;
+}
+
+.mobile-wrapper .slide-label {
+  font-size: 13px;
+  color: black;
+  display: none;
+}
+
+
+/* hide body on smaller screens */
+
+
+
+
+@media screen and (max-width: 800px) {
+  .wrapper {
+    display: none;
+  }
+
+  .mobile-wrapper {
+    display: block;
+  }
+
+  .about-table {
+    display: none;
+  }
+
+  #name-title {
+    display: none;
+  }
+}
+  
+

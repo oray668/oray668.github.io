@@ -1,7 +1,6 @@
 
 
 
-
 // MAKE PROJECT TABLE DRAGGABLE //
 
 
@@ -52,9 +51,4 @@ function dragElement(elmnt) {
   
   
 }
-
-
-
-
-
 
