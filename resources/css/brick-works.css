@@ -336,50 +336,97 @@ img {
 
 
 
-
-
-
-
-  /* SKETCHES */
-
+ 
  
 
-
-  
-  .brick-icon {
-    position: absolute;
-    z-index: 10;
-    width: 10%;
-}
-
-  .brick-icon img {
-    object-fit: cover;
-    width: 100%;
-  }
-
-
-.brick-icon:hover {
-    cursor: grab;
-    z-index: 100;
-}
+ 
+ 
+ 
 
 .hover-info {
   visibility: hidden;
   width: 150px;
-  color: rgb(1, 120, 255);
+  color: black;
   position: absolute;
-  z-index: 20;
+  z-index: 103;
   left: 100%;
   padding-left: 10px;
   font-size: 0.9rem;
 }
 
+ 
+.hover-info {
+  visibility: hidden;
+  width: 150px;
+  color: black;
+  position: absolute;
+  z-index: 103;
+  left: 100%;
+  top: 50%;
+  padding-left: 10px;
+  font-size: 0.9rem;
+}
+ 
 .brick-icon:hover .hover-info{
     visibility: visible;
 }
   
+ 
+ 
+ 
+ 
+  .brick {
+    position: absolute;
+    z-index: 10;
+    width: 8%;
+    pointer-events: none;      /* the box itself is never clickable; script-brick-works.js hit-tests the PNG's opaque pixels instead */
+    user-select: none;
+    -webkit-user-drag: none;
+}
+ 
+  .brick img {
+    object-fit: cover;
+    width: 100%;
+    
+  }
+ 
+ 
+ 
+/* stop the browser selecting / natively dragging the brick images (incl. Safari) */
+.brick,
+.brick * {
+  -webkit-user-select: none;
+  user-select: none;
+  -webkit-user-drag: none;
+  -webkit-touch-callout: none;
+}
+ 
+.brick img {
+  -webkit-user-drag: none;
+}
+ 
 
-
+/* BRICK STATES (classes toggled by script-brick-works.js) */
+ 
+/* hover info appears only when the pointer is over an opaque part of the brick */
+.brick.is-hover .hover-info {
+  visibility: visible;
+}
+ 
+/* cursor applies even over elements underneath (table, links) that have their own cursor */
+html.over-brick,
+html.over-brick * {
+  cursor: grab !important;
+}
+ 
+html.is-dragging,
+html.is-dragging * {
+  cursor: grabbing !important;
+  user-select: none;
+}
+ 
+/* BRICK STATES end */
+ 
 
 
 /* MOBILE PAGE */
