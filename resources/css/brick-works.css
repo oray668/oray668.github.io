@@ -406,8 +406,7 @@ html.is-dragging * {
   visibility: hidden;
   width: 100px;
   color: black;
-  border: 1px solid black;
-  background-color: white;
+  
   position: absolute;
   z-index: 103;
   left: 100%;
@@ -415,6 +414,15 @@ html.is-dragging * {
   padding: 5px 0px 5px 5px;
   
   font-size: 0.9rem;
+}
+
+.hover-number {
+  width: 35px;
+  text-align: center;
+  border: black solid 1px;
+  background-color: white;
+  padding: 3px 5px 3px 5px;
+  margin-bottom: 5px;
 }
 
 
