@@ -400,7 +400,7 @@ html.is-dragging * {
 /* BRICK STATES end */
  
 
- 
+
 
 .hover-info {
   visibility: hidden;
@@ -409,7 +409,7 @@ html.is-dragging * {
   
   position: absolute;
   z-index: 103;
-  left: 100%;
+  left: 80%;
   top: 50%;
   padding: 5px 0px 5px 5px;
   
@@ -430,6 +430,115 @@ html.is-dragging * {
 .brick-icon:hover .hover-info{
     visibility: visible;
 }
+
+
+.svg-wrap {
+
+  justify-content: center;
+  position: fixed;
+  inset: 0;         
+  margin: auto;
+  z-index: 100;
+  width: 50%;
+  height: 10vw;
+
+  --start: 1s; 
+}
+
+.svg-wrap svg {
+  width: 100%;
+  
+  overflow: visible;
+}
+
+.brick-letter {
+  fill: black;
+  stroke: white;
+  stroke-miterlimit: 10;
+}
+
+.letter {
+  opacity: 0;
+  animation: letter-in 0s forwards;
+  animation-delay: calc(var(--start) + var(--i) * 0.25s);
+}
+
+@keyframes letter-in {
+  to { opacity: 1; }
+}
+
+.all {
+  animation: all-out 0.5s ease-in forwards;
+  animation-delay: calc(var(--start) + 10s); 
+}
+
+@keyframes all-out {
+  to { opacity: 0; }
+}
+
+
+
+.title-text {
+  opacity: 0;
+  width: 100%;
+  padding-top: 30px;
+  animation: description-in-out 8s forwards;
+  animation-delay: 4s;
+}
+
+@keyframes description-in-out {
+  0% {
+    opacity: 0;
+    
+  }
+  /* Quickly fade in during the first 10% of the timeline */
+  1% {
+    opacity: 1;
+    display: block;
+  }
+  /* Stay fully visible until 90% of the timeline */
+  90% {
+    opacity: 1;
+    display: block;
+  }
+  /* Fade back out and vanish completely at the end */
+  100% {
+    opacity: 0;
+    
+  }
+}
+
+.instruction-text {
+  opacity: 0;
+  padding-top: 5px;
+  animation: instruction-in-out 10s forwards;
+  animation-delay: 10s;
+}
+
+@keyframes instruction-in-out {
+  0% {
+    opacity: 0;
+    
+  }
+  /* Quickly fade in during the first 10% of the timeline */
+  1% {
+    opacity: 1;
+    display: block;
+  }
+  /* Stay fully visible until 90% of the timeline */
+  90% {
+    opacity: 1;
+    display: block;
+  }
+  /* Fade back out and vanish completely at the end */
+  100% {
+    opacity: 0;
+    display: none;
+  }
+}
+
+
+
 
 
 
