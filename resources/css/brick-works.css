@@ -404,7 +404,7 @@ html.is-dragging * {
 
 .hover-info {
   visibility: hidden;
-  width: 100px;
+  width: 125px;
   color: black;
   
   position: absolute;
