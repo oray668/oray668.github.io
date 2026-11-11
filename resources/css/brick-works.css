@@ -481,7 +481,7 @@ html.is-dragging * {
 .title-text {
   opacity: 0;
   width: 100%;
-  padding-top: 30px;
+  padding-top: 10px;
   animation: description-in-out 8s forwards;
   animation-delay: 4s;
 }
